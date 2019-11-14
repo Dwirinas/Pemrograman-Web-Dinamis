@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Percobaan 18</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+/*style dengan header*/
+header{
+    background-color: #fd7c6e;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: tan;
+}
+/*Create two column/boxes that floats next to each other*/
+nav{
+    float: left;
+    padding: 20px;
+    width: 30%;
+    background-color: #fdbcb4;
+    height: 300px; /*only for demonstration, should be removed*/
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+article{
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #ffcfab;
+    height: 300px; /*only for demonstration, should be removed*/
+}
+/*Clear floats after the columns*/
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Style the footer*/
+footer{
+    background-color: #ffa089;
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+}
+/*Responsive layout - makes the two/boxes tack on top of each other instead
+of next to each other, on small screens*/
+@media (max-width: 600px){
+    nav, article{
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+<body>
+    <h2>KOTA SEMARANG</h2>
+    <p>Kota Semarang (Hanacaraka: ꦏꦸꦛ​ꦱꦼꦩꦫꦁ , Jawa: Kutha Semarang) adalah 
+        ibu kota Provinsi Jawa Tengah, Indonesia sekaligus kota metropolitan 
+        terbesar kelima di Indonesia sesudah Jakarta, Surabaya, Medan, dan 
+        Bandung.[3][4] Sebagai salah satu kota paling berkembang di Pulau 
+        Jawa, Kota Semarang mempunyai jumlah penduduk yang hampir mencapai 
+        2 juta jiwa dan siang hari bisa mencapai 2,5 juta jiwa.</p>
+    <header>
+        <h2>KOTA SEMARANG</h2>
+        <p></p>
+    </header>
+    <nav >
+        <ul>
+            <li><a href="Geografi.html">Geofrafi</a></li>
+            <li><a href="IklimDanCuaca.html">Iklim Dan Cuaca</a></li>  
+            <li><a href="Wisata.html">Wisata</a></li> 
+        </ul>  
+        </nav>
+    <section>  
+    <article>
+        <h1>Geofrafi</h1>
+        <p>Kota Semarang adalah salah satu kota penting yang terletak
+             di pesisir utara Jawa dan sebagai hub utama penghubung 
+             Jakarta - Surabaya dan kota - kota di pedalaman selatan 
+             Jawa (Surakarta dan Yogyakarta). Kota Semarang memiliki 
+             ketinggian dari 2 meter bawah permukaan laut hingga 340 
+             meter diatas permukaan laut dengan kemiringan lereng 
+             0% - 45%. Kota Semarang merupakan kota yang memiliki 
+             kondisi topografi yang unik berupa wilayah dataran rendah 
+             yang sempit dan wilayah perbukitan yang memanjang dari 
+             sisi barat hingga sisi timur Kota Semarang. Wilayah dataran 
+             rendah di Kota Semarang sangat sempit.</p>
+    </article>
+    </section>
+    <footer>
+        <p>Dwi Rina</p>
+    </footer>
+</body>
+</html>
